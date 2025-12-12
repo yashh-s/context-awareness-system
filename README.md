@@ -135,3 +135,27 @@ http://<raspberry-pi-ip>:5000
 ```
 
 ---
+
+## 🌱 Future Improvements
+
+- Integrate ML-based object classification  
+- Add real-time hand tracking  
+- Implement wireless ESP32 communication (WiFi/BLE)  
+- Package entire system using Docker for easy deployment  
+- Add multi-user profiles and personalized automation  
+
+---
+
+## 👥 Credits & Contributors
+
+This project was created as part of the **Electronics Lab course at IIIT Bangalore**.
+
+**Contributors:**
+- Chauhan Sahil Nileshbhai  
+- Abel B Aliyas  
+- Saharsh S Hiremath  
+- Yash Sultania  
+- Gnan Ravi Gowda  
+- Tharun M  
+
+---
