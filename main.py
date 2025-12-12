@@ -32,8 +32,8 @@ BAUD = 115200
 TIMEOUT = 1.0
 
 #api keys
-SPOTIPY_CLIENT_ID = '2d81d1bb16e64018abdcace120144903'
-SPOTIPY_CLIENT_SECRET = '788fd139086a4f4f825b32d20282810a'
+SPOTIPY_CLIENT_ID = '<yourid>'
+SPOTIPY_CLIENT_SECRET = '<your_client_secret'
 SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:8888/callback'
 
 #playlist url
@@ -1493,3 +1493,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
