@@ -50,18 +50,17 @@ Shows:
 
 ## 📁 Repository Structure
 
+```text
 .
-├── main.py # Core logic: serial handler, Spotify, KDE Connect, Flask UI
-├── camera.py # Object detection using OpenCV + PiCamera2
+├── main.py                  # Core logic: serial handler, Spotify, KDE Connect, Flask UI
+├── camera.py                # Object detection using OpenCV + PiCamera2
 ├── ESP32_Code/
-│ └── ESP32_Code.ino # Gesture + RFID firmware (ESP32)
+│   └── ESP32_Code.ino       # Gesture + RFID firmware (ESP32)
 ├── docs/
-│ └── Context Awareness System Project Report.pdf
-├── requirements.txt # Python dependencies
-└── README.md # Project documentation
-
-yaml
-Copy code
+│   └── Context Awareness System Project Report.pdf
+├── requirements.txt         # Python dependencies
+└── README.md                # Project documentation
+```
 
 ---
 
@@ -83,39 +82,56 @@ Copy code
 
 ```bash
 pip install -r requirements.txt
-2️⃣ Install Raspberry Pi Dependencies
-bash
-Copy code
+```
+
+### 2️⃣ Install Raspberry Pi Dependencies
+
+```bash
 sudo apt install python3-opencv python3-picamera2
 sudo apt install kdeconnect dunst
 sudo apt install wl-clipboard xclip xsel
-3️⃣ Spotify Setup
+```
+
+### 3️⃣ Spotify Setup
+
 Create a Spotify Developer App and add this redirect URI:
 
-arduino
-Copy code
+```plaintext
 http://127.0.0.1:8888/callback
+```
+
 Export credentials:
 
-bash
-Copy code
+```bash
 export SPOTIPY_CLIENT_ID="your_id"
 export SPOTIPY_CLIENT_SECRET="your_secret"
 export SPOTIPY_REDIRECT_URI="http://127.0.0.1:8888/callback"
-4️⃣ Flash the ESP32 Firmware
-bash
-Copy code
+```
+
+### 4️⃣ Flash the ESP32 Firmware
+
+```bash
 # Using Arduino IDE or PlatformIO
 # Upload the following file:
 ESP32_Code/ESP32_Code.ino
-▶️ Running the System
-1️⃣ Start the main program
-bash
-Copy code
-python3 main.py /dev/ttyUSB0
-(Replace /dev/ttyUSB0 with your ESP32’s port.)
+```
 
-2️⃣ Open the dashboard
-cpp
-Copy code
+---
+
+## ▶️ Running the System
+
+### 1️⃣ Start the main program
+
+```bash
+python3 main.py /dev/ttyUSB0
+```
+
+(Replace `/dev/ttyUSB0` with your ESP32’s port.)
+
+### 2️⃣ Open the dashboard
+
+```plaintext
 http://<raspberry-pi-ip>:5000
+```
+
+---
